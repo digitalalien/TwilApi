@@ -53,5 +53,14 @@
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Scripts" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\ReferenceData.sql" />
+    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\UserContactInfo.sql" />
+    <Build Include="Tables\Location.sql" />
+    <Build Include="Tables\LocationUser.sql" />
   </ItemGroup>
 </Project>

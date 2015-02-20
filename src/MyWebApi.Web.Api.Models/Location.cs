@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyWebApi.Web.Api.Models
 {
-    class Property
+    public class Location
     {
         private List<Link> _links;
 
-        public long? PropertyId { get; set; }
-        public virtual string PropertyName { get; set; }
+        public long? LocationId { get; set; }
+        public virtual string LocationName { get; set; }
 
         public List<User> Staff { get; set; }
 
